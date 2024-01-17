@@ -1,0 +1,97 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Montserrat',sans-serif;
+}
+body{
+    display: flex;
+    background: crimson;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    width: 800px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background: white;
+    /* border-radius: 5px; */
+    border: 1px solid white ;
+    flex-wrap: wrap;
+   
+}
+.container .image{
+    background-image:url(https://scion-social.com/wp-content/uploads/2016/07/gif-wallpaper-13.gif);
+    border-right: 1px solid gray ;
+    padding: 20px;
+    color: white;
+    background-size: 100%;
+    
+}
+.container .image p{
+    padding: 10px 0px;
+    text-align: justify;  
+}
+.container :where(.image , .form){
+
+    width:50%;
+    height: 400px;
+    
+
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.container .form{
+    padding: 20px;
+    background-size: 100%;
+    background-image: url(https://scion-social.com/wp-content/uploads/2016/07/gif-wallpaper-13.gif);
+    color: white;
+    
+}
+.container .form label{
+    margin-bottom: 5px;
+    display: block;
+}
+.container .form input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 0 5px;
+}
+.container .form .submit-btn{
+    background: blue;
+    font-size: 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 20px;
+
+ 
+}
+.container .form .submit-btn:hover{
+    background: darkblue;
+    color: white;
+}
+@media screen and (max-width:600px){
+
+   
+
+    .container :where(.image , .form){
+        width:100%;
+    }  
+
+    /* .container .image{
+        min-height:500px;
+    } */
+
+}
